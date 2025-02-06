@@ -1,6 +1,9 @@
 import telebot, os, json
 from parser import checker
-bot = telebot.TeleBot("7838120346:AAGls6YBPMAUF0HEg4xnN2yc0qLR2RUTaEU")
+
+bot_token = "YOUR_TOKEN"
+
+bot = telebot.TeleBot(bot_token)
 
 if not os.path.exists("whitelist.json"):
     whitelist = {}
